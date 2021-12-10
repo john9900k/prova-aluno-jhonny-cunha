@@ -8,7 +8,7 @@ module.exports = {
       filename: './dev.sqlite3'
     },
     seeds: {
-      directory: './data/seeds'
+      directory: './seeds'
     }
   },
 
@@ -43,6 +43,4 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   }
-  
-
 };
