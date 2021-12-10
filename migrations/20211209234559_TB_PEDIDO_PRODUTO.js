@@ -7,6 +7,7 @@ exports.up = function(knex) {
         table.integer('quantidade').notNull()
         table.foreign('pedido_id').references('TB_PEDIDO.id')
         table.foreign('produto_id').references('TB_PRODUTO.id')
+        table.real('valor_item').notNull()
     })
 };
 

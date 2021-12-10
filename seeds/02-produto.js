@@ -4,7 +4,7 @@ exports.seed = function(knex) {
   return knex('TB_PRODUTO').del()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
+      return knex('TB_PRODUTO').insert([
         {id: 1, descricao: 'Arroz', preco: 5.54},
         {id: 2, descricao: 'Feijão', preco: 8.90},
         {id: 3, descricao: 'Macarrão', preco: 6.00},

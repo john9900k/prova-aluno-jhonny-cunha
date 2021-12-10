@@ -1,6 +1,6 @@
 
 exports.up = function(knex) {
-    return knex.schema.createTable('TB_PRODUTO', table => {
+    return knex.schema.createTable('TB_PEDIDO', table => {
         table.increments('id').primary()
         table.date('data_pedido').notNull()
         table.integer('cliente_id').unsigned()
