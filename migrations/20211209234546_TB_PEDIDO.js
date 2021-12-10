@@ -2,7 +2,7 @@
 exports.up = function(knex) {
     return knex.schema.createTable('TB_PRODUTO', table => {
         table.increments('id').primary()
-        table.string('data_pedido').notNull()
+        table.date('data_pedido').notNull()
         table.integer('cliente_id').unsigned()
         table.foreign('cliente_id').references('TB_CLIENTE.id')
     })
