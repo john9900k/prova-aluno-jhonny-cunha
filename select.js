@@ -3,7 +3,7 @@ const knex = require('knex') ({
     connection: {
       filename: './banco/dev.sqlite3'
     },
-    
+    useNullAsDefault: true
 })
 
 knex.select().table('TB_CLIENTE').then(data => {
