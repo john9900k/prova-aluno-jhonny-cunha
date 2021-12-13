@@ -2,7 +2,8 @@ const knex = require('knex') ({
     client: 'sqlite3',
     connection: {
       filename: './banco/dev.sqlite3'
-    }
+    },
+    
 })
 
 knex.select().table('TB_CLIENTE').then(data => {
